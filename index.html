@@ -1,439 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Jonathan Duch — Product Leader</title>
-
-<style>
-:root {
-    --bg: #ffffff;
-    --paper: #ffffff;
-    --ink: #000000;
-    --muted: #444444;
-    --accent: #000000;
-    --rule: #cfcfcf;
-    --max: 760px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    background: #ffffff;
-    color: #000000;
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.75;
-    font-size: 18px;
-    -webkit-font-smoothing: antialiased;
-}
-
-.page {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 4rem 2rem 8rem;
-}
-
-header {
-    margin-bottom: 5rem;
-    border-top: 2px solid var(--ink);
-    padding-top: 2rem;
-}
-
-.kicker {
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-bottom: 1rem;
-}
-
-h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
-    line-height: 0.95;
-    margin: 0;
-    font-weight: normal;
-    letter-spacing: -0.03em;
-}
-
-.subtitle {
-    margin-top: 1.5rem;
-    font-size: 1.3rem;
-    color: var(--muted);
-    max-width: 600px;
-}
-
-.contact {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    font-size: 0.95rem;
-}
-
-a,
-.contact a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover,
-.contact a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-bottom: 5rem;
-}
-
-.section-label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: var(--muted);
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2.2rem;
-    line-height: 1.1;
-    margin-bottom: 2rem;
-    font-weight: normal;
-}
-
-p {
-    margin: 1.25rem 0;
-}
-
-.lead {
-    font-size: 1.25rem;
-    line-height: 1.8;
-}
-
-.rule {
-    border-top: 1px solid var(--rule);
-    margin: 4rem 0;
-}
-
-.job {
-    margin-bottom: 4rem;
-}
-
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.company {
-    font-size: 1.4rem;
-    color: #000000;
-}
-
-.role {
-    font-style: italic;
-    color: var(--muted);
-}
-
-.year {
-    color: var(--muted);
-    font-size: 0.95rem;
-}
-
-.job ul {
-    padding-left: 1.25rem;
-}
-
-.job li {
-    margin-bottom: 1rem;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.skill {
-    border-top: 1px solid var(--rule);
-    padding-top: 0.75rem;
-}
-
-footer {
-    border-top: 1px solid var(--rule);
-    padding-top: 2rem;
-    color: var(--muted);
-    font-size: 0.95rem;
-}
-
-@media (max-width: 640px) {
-    body {
-        font-size: 17px;
-    }
-
-    .page {
-        padding: 2rem 1.25rem 5rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
-</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.8px; font: 9.0px Georgia; color: #343434; -webkit-text-stroke: #343434}
+    p.p3 {margin: 0.0px 0.0px 15.0px 0.0px; line-height: 27.3px; font: 15.6px Georgia; color: #343434; -webkit-text-stroke: #343434}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.9px; font: 11.4px Georgia; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.8px; font: 9.6px Georgia; color: #343434; -webkit-text-stroke: #343434}
+    p.p6 {margin: 0.0px 0.0px 15.0px 0.0px; line-height: 27.0px; font: 15.0px Georgia; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 15.0px 0.0px; line-height: 31.5px; font: 18.0px Georgia; color: #000000; -webkit-text-stroke: #000000}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 31.5px; font: 18.0px Georgia; color: #000000; -webkit-text-stroke: #000000; min-height: 21.0px}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 29.4px; font: 16.8px Georgia; color: #000000; -webkit-text-stroke: #000000}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 31.5px; font: 18.0px Georgia; color: #343434; -webkit-text-stroke: #343434}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.9px; font: 11.4px Georgia; color: #343434; -webkit-text-stroke: #343434}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 31.5px; font: 18.0px Georgia; color: #000000; -webkit-text-stroke: #000000}
+    li.li13 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 31.5px; font: 18.0px Georgia; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 11.4px Georgia; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s3 {-webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
 </head>
-
 <body>
-
-<div class="page">
-
-<header>
-    <div class="kicker">Product Leadership · Martech · Systems Thinking</div>
-
-    <h1>Jonathan Duch</h1>
-
-    <p class="subtitle">
-        Product leader focused on scalable systems, customer experience,
-        operational clarity, and the intersection of marketing technology
-        and organizational execution.
-    </p>
-
-    <div class="contact">
-        <span>202.290.6125</span>
-
-        <a href="mailto:jonduch@gmail.com">
-            jonduch@gmail.com
-        </a>
-
-        <a href="https://linkedin.com/in/jonathan-duch/" target="_blank">
-            linkedin.com/in/jonathan-duch
-        </a>
-    </div>
-</header>
-
-<section>
-    <div class="section-label">Overview</div>
-
-    <p class="lead">
-        Strategic and forward-thinking product leader recognized for
-        developing outcome-driven product strategy, streamlining complex
-        systems, and leading cross-functional organizations through growth,
-        transformation, and execution.
-    </p>
-
-    <p>
-        Over the past two decades, Jonathan has led product initiatives
-        across enterprise SaaS, marketing technology, personalization,
-        customer data platforms, messaging infrastructure, and professional
-        services organizations. His work consistently focuses on making
-        complicated systems understandable, scalable, and useful.
-    </p>
-</section>
-
-<div class="rule"></div>
-
-<section>
-    <div class="section-label">Experience</div>
-
-    <h2>Building systems that scale with people.</h2>
-
-    <div class="job">
-        <div class="job-header">
-            <div>
-                <div class="company">Wayfair</div>
-                <div class="role">Senior Product Manager</div>
-            </div>
-
-            <div class="year">2021 — Present</div>
-        </div>
-
-        <p>
-            Leading the vision, roadmap, and execution of Wayfair’s internal
-            self-service Martech platform responsible for billions of customer
-            communications across email and push channels.
-        </p>
-
-        <ul>
-            <li>
-                Integrated three independent systems into a unified platform,
-                enabling real-time personalization and improved customer
-                understanding.
-            </li>
-
-            <li>
-                Reduced campaign creation time by 42%, saving approximately
-                2,800 operational hours annually.
-            </li>
-
-            <li>
-                Reduced onboarding time for new users by 50% through
-                documentation and structured onboarding curriculum.
-            </li>
-
-            <li>
-                Reduced critical platform incidents by 80% year-over-year.
-            </li>
-
-            <li>
-                Standardized engineering planning and forecasting methods to
-                improve delivery predictability and execution velocity.
-            </li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <div>
-                <div class="company">Cheetah Digital</div>
-                <div class="role">Principal & Senior Product Manager</div>
-            </div>
-
-            <div class="year">2018 — 2021</div>
-        </div>
-
-        <p>
-            Led integrations and market releases across customer data and
-            marketing platforms while launching the organization’s first
-            alpha and beta programs.
-        </p>
-
-        <ul>
-            <li>
-                Delivered enterprise integrations for Fortune 1000 customers
-                including Hilton, Williams Sonoma, and Roku.
-            </li>
-
-            <li>
-                Introduced structured early-adopter programs to improve
-                product-market feedback loops.
-            </li>
-
-            <li>
-                Presented platform demonstrations and thought leadership
-                sessions to audiences exceeding 1,000 attendees.
-            </li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <div>
-                <div class="company">Monetate</div>
-                <div class="role">Director, Product Marketing</div>
-            </div>
-
-            <div class="year">2016 — 2018</div>
-        </div>
-
-        <p>
-            Directed the release and positioning of the Monetate Intelligent
-            Personalization Engine, a machine-learning driven testing and
-            personalization platform.
-        </p>
-
-        <ul>
-            <li>
-                Led early adopter engagement programs supporting a successful
-                market launch.
-            </li>
-
-            <li>
-                Produced white papers, case studies, webinars, and customer
-                research shaping go-to-market strategy.
-            </li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <div>
-                <div class="company">Earlier Career</div>
-                <div class="role">
-                    Resonate · SMSGoGo · ExactTarget
-                </div>
-            </div>
-
-            <div class="year">2007 — 2016</div>
-        </div>
-
-        <p>
-            Built experience across product delivery, solutions consulting,
-            startup operations, international expansion, and enterprise
-            software implementation.
-        </p>
-
-        <ul>
-            <li>
-                Helped establish ExactTarget’s German office and services
-                organization.
-            </li>
-
-            <li>
-                Delivered more than 65 enterprise software implementations
-                across Europe and North America.
-            </li>
-
-            <li>
-                Co-founded SMSGoGo, an SMS software startup serving the
-                Philippine market.
-            </li>
-
-            <li>
-                Awarded ExactTarget’s 2011 Services Employee of the Year.
-            </li>
-        </ul>
-    </div>
-</section>
-
-<div class="rule"></div>
-
-<section>
-    <div class="section-label">Capabilities</div>
-
-    <h2>Areas of focus.</h2>
-
-    <div class="skills">
-        <div class="skill">Product Strategy & Roadmaps</div>
-        <div class="skill">Marketing Technology Platforms</div>
-        <div class="skill">Cross-Functional Leadership</div>
-        <div class="skill">Enterprise SaaS</div>
-        <div class="skill">Operational Streamlining</div>
-        <div class="skill">Customer Experience</div>
-        <div class="skill">Global Team Leadership</div>
-        <div class="skill">Product Marketing</div>
-        <div class="skill">Platform Integrations</div>
-        <div class="skill">User Experience Optimization</div>
-    </div>
-</section>
-
-<div class="rule"></div>
-
-<section>
-    <div class="section-label">Education</div>
-
-    <h2>Education & Professional Development</h2>
-
-    <p>
-        <strong>Indiana University</strong><br>
-        Bachelor of Arts in Economics & Political Science
-    </p>
-
-    <p>
-        <strong>Pragmatic Institute</strong><br>
-        Pragmatic Marketing — Build, Focus, Foundations
-    </p>
-</section>
-
-</div>
-
+<p class="p1"><span class="s1">PRODUCT LEADERSHIP · MARTECH · SYSTEMS THINKING</span></p>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 57.0px; font: 60.0px Georgia; color: #000000; -webkit-text-stroke: #000000"><span class="s1">Jonathan Duch</span></h1>
+<p class="p3"><span class="s1">Product leader focused on scalable systems, customer experience, operational clarity, and the intersection of marketing technology and organizational execution.<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><a href="https://linkedin.com/in/jonathan-duch/">linkedin.com/in/jonathan-duch<span class="Apple-converted-space"> </span><span class="s2"></span></a></span></p>
+<p class="p5"><span class="s1">OVERVIEW</span></p>
+<p class="p6"><span class="s1">Strategic and forward-thinking product leader recognized for developing outcome-driven product strategy, streamlining complex systems, and leading cross-functional organizations through growth, transformation, and execution.<span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s1">Over the past two decades, Jonathan has led product initiatives across enterprise SaaS, marketing technology, personalization, customer data platforms, messaging infrastructure, and professional services organizations. His work consistently focuses on making complicated systems understandable, scalable, and useful.<span class="Apple-converted-space"> </span></span></p>
+<p class="p8"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">EXPERIENCE</span></p>
+<h2 style="margin: 0.0px 0.0px 24.0px 0.0px; line-height: 29.0px; font: 26.4px Georgia; color: #000000; -webkit-text-stroke: #000000"><span class="s1">Building systems that scale with people.</span></h2>
+<p class="p10"><span class="s1">Wayfair</span></p>
+<p class="p11"><span class="s1"><i>Senior Product Manager</i></span></p>
+<p class="p12"><span class="s1">2021 — Present</span></p>
+<p class="p7"><span class="s1">Leading the vision, roadmap, and execution of Wayfair’s internal self-service Martech platform responsible for billions of customer communications across email and push channels.<span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li13"><span class="s3"></span><span class="s1">Integrated three independent systems into a unified platform, enabling real-time personalization and improved customer understanding.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Reduced campaign creation time by 42%, saving approximately 2,800 operational hours annually.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Reduced onboarding time for new users by 50% through documentation and structured onboarding curriculum.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Reduced critical platform incidents by 80% year-over-year.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Standardized engineering planning and forecasting methods to improve delivery predictability and execution velocity.<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p10"><span class="s1">Cheetah Digital</span></p>
+<p class="p11"><span class="s1"><i>Principal &amp; Senior Product Manager</i></span></p>
+<p class="p12"><span class="s1">2018 — 2021</span></p>
+<p class="p7"><span class="s1">Led integrations and market releases across customer data and marketing platforms while launching the organization’s first alpha and beta programs.<span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li13"><span class="s3"></span><span class="s1">Delivered enterprise integrations for Fortune 1000 customers including Hilton, Williams Sonoma, and Roku.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Introduced structured early-adopter programs to improve product-market feedback loops.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Presented platform demonstrations and thought leadership sessions to audiences exceeding 1,000 attendees.<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p10"><span class="s1">Monetate</span></p>
+<p class="p11"><span class="s1"><i>Director, Product Marketing</i></span></p>
+<p class="p12"><span class="s1">2016 — 2018</span></p>
+<p class="p7"><span class="s1">Directed the release and positioning of the Monetate Intelligent Personalization Engine, a machine-learning driven testing and personalization platform.<span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li13"><span class="s3"></span><span class="s1">Led early adopter engagement programs supporting a successful market launch.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Produced white papers, case studies, webinars, and customer research shaping go-to-market strategy.<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p10"><span class="s1">Earlier Career</span></p>
+<p class="p11"><span class="s1"><i>Resonate · SMSGoGo · ExactTarget<span class="Apple-converted-space"> </span></i></span></p>
+<p class="p12"><span class="s1">2007 — 2016</span></p>
+<p class="p7"><span class="s1">Built experience across product delivery, solutions consulting, startup operations, international expansion, and enterprise software implementation.<span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li13"><span class="s3"></span><span class="s1">Helped establish ExactTarget’s German office and services organization.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Delivered more than 65 enterprise software implementations across Europe and North America.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Co-founded SMSGoGo, an SMS software startup serving the Philippine market.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li13"><span class="s3"></span><span class="s1">Awarded ExactTarget’s 2011 Services Employee of the Year.<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p8"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">CAPABILITIES</span></p>
+<h2 style="margin: 0.0px 0.0px 24.0px 0.0px; line-height: 29.0px; font: 26.4px Georgia; color: #000000; -webkit-text-stroke: #000000"><span class="s1">Areas of focus.</span></h2>
+<p class="p14"><span class="s1">Product Strategy &amp; Roadmaps</span></p>
+<p class="p14"><span class="s1">Marketing Technology Platforms</span></p>
+<p class="p14"><span class="s1">Cross-Functional Leadership</span></p>
+<p class="p14"><span class="s1">Enterprise SaaS</span></p>
+<p class="p14"><span class="s1">Operational Streamlining</span></p>
+<p class="p14"><span class="s1">Customer Experience</span></p>
+<p class="p14"><span class="s1">Global Team Leadership</span></p>
+<p class="p14"><span class="s1">Product Marketing</span></p>
+<p class="p14"><span class="s1">Platform Integrations</span></p>
+<p class="p14"><span class="s1">User Experience Optimization</span></p>
+<p class="p8"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">EDUCATION</span></p>
+<h2 style="margin: 0.0px 0.0px 24.0px 0.0px; line-height: 29.0px; font: 26.4px Georgia; color: #000000; -webkit-text-stroke: #000000"><span class="s1">Education &amp; Professional Development</span></h2>
+<p class="p7"><span class="s1"><b>Indiana University</b><br>
+Bachelor of Arts in Economics &amp; Political Science<span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s1"><b>Pragmatic Institute</b><br>
+Pragmatic Marketing — Build, Focus, Foundations<span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
