@@ -4,9 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Jonathan Duch — Product Leader</title>
+<title>Jonathan Duch</title>
 
 <style>
+
 :root {
     --bg: #ffffff;
     --ink: #000000;
@@ -17,10 +18,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +35,32 @@ body {
     max-width: var(--max);
     margin: 0 auto;
     padding: 4rem 2rem 8rem;
+}
+
+.top-menu {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+}
+
+.menu-item {
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: black;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+.menu-item:hover {
+    background: black;
+    color: white;
+}
+
+.menu-item.active {
+    background: black;
+    color: white;
 }
 
 header {
@@ -74,15 +97,8 @@ h1 {
     font-size: 0.95rem;
 }
 
-.contact a,
 a {
     color: inherit;
-    text-decoration: none;
-}
-
-.contact a:hover,
-a:hover {
-    text-decoration: underline;
 }
 
 section {
@@ -118,57 +134,6 @@ p {
     margin: 4rem 0;
 }
 
-.job {
-    margin-bottom: 4rem;
-}
-
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.25rem;
-}
-
-.company {
-    font-size: 1.4rem;
-}
-
-.role {
-    font-style: italic;
-    color: var(--muted);
-}
-
-.year {
-    color: var(--muted);
-    font-size: 0.95rem;
-}
-
-.job ul {
-    padding-left: 1.25rem;
-}
-
-.job li {
-    margin-bottom: 1rem;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.skill {
-    border-top: 1px solid var(--rule);
-    padding-top: 0.75rem;
-}
-
-.education-item {
-    margin-bottom: 1.5rem;
-}
-
 footer {
     border-top: 1px solid var(--rule);
     padding-top: 2rem;
@@ -177,26 +142,28 @@ footer {
     margin-top: 5rem;
 }
 
-@media (max-width: 640px) {
-
-    body {
-        font-size: 17px;
-    }
-
-    .page {
-        padding: 2rem 1.25rem 5rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
 </style>
 </head>
 
 <body>
 
 <div class="page">
+
+<nav class="top-menu">
+
+    <a href="/" class="menu-item active">
+        Home
+    </a>
+
+    <a href="/cv/" class="menu-item">
+        CV
+    </a>
+
+    <a href="/misc/" class="menu-item">
+        Misc
+    </a>
+
+</nav>
 
 <header>
 
@@ -205,12 +172,6 @@ footer {
     </div>
 
     <h1>Jonathan Duch</h1>
-
-    <p class="subtitle">
-        Product leader focused on customer experience, scalable systems,
-        AI-enabled workflows, operational clarity, and modern marketing
-        technology.
-    </p>
 
     <div class="contact">
         <a href="https://linkedin.com/in/jonathan-duch/" target="_blank">
@@ -222,24 +183,37 @@ footer {
 
 <section>
 
-    <div class="section-label">Profile</div>
+    <div class="section-label">About</div>
 
-    <p class="lead">
-        Strategic and forward-thinking product leader recognized for
-        developing metric-driven product vision & strategy, driving product
-        growth, and delivering exceptional customer experience.
+    <p>
+        I have spent most of my career working at the at the cross section of
+        technology, communication, and customer experience.
     </p>
 
     <p>
-        Integrity-based leader skilled in building and leading global
-        cross-functional product teams to maximize revenue.
+        Over the past two decades I've led product organizations,
+        launched new products, built startups, opened international
+        offices, implemented enterprise software, and helped teams
+        navigate complex technical problems.
     </p>
 
     <p>
-        Thought leader regularly presenting, speaking, and promoting
-        product awareness at conferences and industry engagements. Built
-        and scaled multiple 0 → 1 products in the customer communication
-        and CRM marketing space.
+        Today I focus on AI, marketing technology, and systems that help
+        organizations build lasting customer relationships.
+    </p>
+
+</section>
+
+<section>
+
+    <div class="section-label">Life and Work Philosophy</div>
+
+    <p>
+        Simple is better. 
+    </p>
+
+    <p>
+        It is how my brain works. I see complexity, and then I obsess over it to distill it to its simpliest terms. That is hard to do. It takes time. It is sometimes worth it.  Then again, it is how my mind works so I don't have much of a choice.
     </p>
 
 </section>
@@ -248,257 +222,23 @@ footer {
 
 <section>
 
-    <div class="section-label">Experience</div>
-
-    <h2>Product Results Delivered</h2>
-
-    <div class="job">
-
-        <div class="job-header">
-            <div>
-                <div class="company">Wayfair</div>
-                <div class="role">Senior Product Manager</div>
-            </div>
-        </div>
-
-        <p>
-            Charged with leading product vision, strategy, and execution for
-            Wayfair's internal, self-service martech platform delivering
-            billions of B2C and B2B emails, push, and SMS messages driving
-            +$1B in revenue annually.
-        </p>
-
-        <ul>
-            <li>
-                Developed team's first 3-year, metric-led product vision and
-                strategy aligning product, engineering, stakeholders, and
-                executives on long-term business outcomes.
-            </li>
-
-            <li>
-                Accomplished 80%+ SMS list growth, 6%+ push list growth,
-                increased revenue per visit by 10%+, and reduced critical
-                incidents by 80% YoY.
-            </li>
-
-            <li>
-                Led PM adoption of agentic AI and developed 12+ AI agents
-                supporting data analysis, user support, and campaign
-                automation.
-            </li>
-
-            <li>
-                Led two end-to-end application redesigns decreasing campaign
-                creation time by 42% and saving users 2.8K hours annually.
-            </li>
-
-            <li>
-                Reduced onboarding time by 50% while increasing core feature
-                documentation from 10% to 100%.
-            </li>
-        </ul>
-
-    </div>
-
-    <div class="job">
-
-        <div class="job-header">
-            <div>
-                <div class="company">Cheetah Digital, Inc.</div>
-                <div class="role">Principal & Senior Product Manager</div>
-            </div>
-        </div>
-
-        <p>
-            Led integrations across Cheetah Digital platforms including the
-            CDP, alpha/beta programs, data connectors, ad tech integrations,
-            Adobe Experience Manager, and webhook infrastructure.
-        </p>
-
-        <ul>
-
-            <li>
-                Built a 0 → 1 integration framework and onboarded first
-                large-scale enterprise customers.
-            </li>
-
-            <li>
-                Met/exceeded project and delivery deadlines for Fortune 1000 customers including Hilton, Williams Sonoma, and Roku.
-            </li>
-
-            <li>
-                Strengthened industry thought leadership through conference
-                presentations and public speaking engagements.
-            </li>
-
-        </ul>
-
-    </div>
-
-    <div class="job">
-
-        <div class="job-header">
-            <div>
-                <div class="company">Monetate, Inc.</div>
-                <div class="role">Director, Product Marketing</div>
-            </div>
-        </div>
-
-        <p>
-            Charged with leading the release and marketing of Monetate’s new
-            platform — the Monetate Intelligent Personalization Engine, a
-            machine-learning web content testing model.
-        </p>
-
-        <ul>
-            <li>
-                Spearheaded customer engagements for the early adopter program
-                resulting in valuable customer references, credibility, and a
-                successful market launch.
-            </li>
-
-        </ul>
-
-    </div>
-
-    <div class="job">
-
-        <div class="role">
-            Director, Solutions Consulting
-        </div>
-
-        <p>
-            Hired, onboarded, oversaw, and developed the North American solutions consulting team. Created compensation plans, territories, and performance metrics. Achieved on-target earnings; promoted from director of solutions consulting to director of product marketing.
-		</p>
-
-    </div>
-
-</section>
-
-<div class="rule"></div>
-
-<section>
-
-    <div class="section-label">Earlier Career</div>
-
-    <h2>Foundations across SaaS, startups, and professional services.</h2>
-
-    <div class="job">
-
-        <div class="job-header">
-            <div>
-                <div class="company">Resonate, Inc.</div>
-                <div class="role">Senior Manager, Solutions Engineer</div>
-            </div>
-        </div>
-
-        <p>
-            Directed technical sales discovery, customized demonstrations,
-            and prospect engagement supporting SaaS product growth.
-        </p>
-
-    </div>
-
-    <div class="job">
-
-        <div class="job-header">
-            <div>
-                <div class="company">SMSGOGO, Ltd.</div>
-                <div class="role">Co-Founder</div>
-            </div>
-        </div>
-
-        <p>
-            Co-founded an SMS software startup serving the Philippine market,
-            overseeing company vision, acquisition, delivery, QA, and
-            release cycles.
-        </p>
-
-        <ul>
-            <li>Led company from ideation to implementation.</li>
-            <li>Closed first 4 sales deals in the Philippine market.</li>
-            <li>Sold company to our largest client.</li>
-        </ul>
-
-    </div>
-
-    <div class="job">
-
-        <div class="job-header">
-            <div>
-                <div class="company">ExactTarget, Inc.</div>
-                <div class="role">
-                    Managing Consultant · Solution Architect · Implementation Consultant
-                </div>
-            </div>
-        </div>
-
-        <ul>
-
-            <li>
-                Successfully developed and delivered more than 65 enterprise
-                solutions for clients including Microsoft, KLM, The Guardian,
-                Marks & Spencer, and Groupon.
-            </li>
-
-            <li>
-                Hired and led the first professional services team in Munich,
-                Germany.
-            </li>
-
-            <li>
-                Awarded the Services Employee of the Year award across all
-                global offices.
-            </li>
-
-        </ul>
-
-    </div>
-
-</section>
-
-<div class="rule"></div>
-
-<section>
-
-    <div class="section-label">Capabilities</div>
-
-    <h2>Areas of focus.</h2>
-
-    <div class="skills">
-
-        <div class="skill">Product Vision & Strategy</div>
-        <div class="skill">Roadmap Planning & Execution</div>
-        <div class="skill">0 → 1 Product Development</div>
-        <div class="skill">Go-To-Market Strategy</div>
-        <div class="skill">Global Team Leadership</div>
-        <div class="skill">AI Workflow Automation</div>
-        <div class="skill">Product Marketing</div>
-        <div class="skill">Cross-Functional Collaboration</div>
-        <div class="skill">Customer Communications Platforms</div>
-        <div class="skill">Operational Streamlining</div>
-
-    </div>
-
-</section>
-
-<div class="rule"></div>
-
-<section>
-
-    <div class="section-label">Education</div>
-
-    <h2>Education & Professional Development</h2>
-
-    <div class="education-item">
-        <strong>Indiana University</strong><br>
-        Bachelor of Arts in Economics & Political Science
-    </div>
-
-    <div class="education-item">
-        <strong>Pragmatic Institute</strong><br>
-        Pragmatic Marketing — Build, Focus, Foundations
-    </div>
+    <div class="section-label">This Site</div>
+
+    <h2>Three pages.</h2>
+
+    <p>
+        <strong>Home</strong> - You are here.
+    </p>
+  
+    <p>
+        <strong>CV</strong> contains my professional experience,
+        accomplishments, and career history.
+    </p>
+
+    <p>
+        <strong>Misc</strong> contains projects, ideas,
+        writing, and other topics that don't neatly fit anywhere else.
+    </p>
 
 </section>
 
@@ -507,6 +247,6 @@ footer {
 </footer>
 
 </div>
-
+<!--You must have expressed and written permission from the owner of this site to use any part of this site or its contents.-->
 </body>
 </html>
