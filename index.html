@@ -7,7 +7,6 @@
 <title>Jonathan Duch</title>
 
 <style>
-
 :root {
     --bg: #ffffff;
     --ink: #000000;
@@ -18,6 +17,10 @@
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -64,7 +67,7 @@ body {
 }
 
 header {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     border-top: 2px solid var(--ink);
     padding-top: 2rem;
 }
@@ -97,12 +100,19 @@ h1 {
     font-size: 0.95rem;
 }
 
+.contact a,
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+.contact a:hover,
+a:hover {
+    text-decoration: underline;
 }
 
 section {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .section-label {
@@ -131,7 +141,58 @@ p {
 
 .rule {
     border-top: 1px solid var(--rule);
-    margin: 4rem 0;
+    margin: 2rem 0;
+}
+
+.job {
+    margin-bottom: 4rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+
+.company {
+    font-size: 1.4rem;
+}
+
+.role {
+    font-style: italic;
+    color: var(--muted);
+}
+
+.year {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.job ul {
+    padding-left: 1.25rem;
+}
+
+.job li {
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skill {
+    border-top: 1px solid var(--rule);
+    padding-top: 0.75rem;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
 }
 
 footer {
@@ -142,6 +203,20 @@ footer {
     margin-top: 5rem;
 }
 
+@media (max-width: 640px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    .page {
+        padding: 2rem 1.25rem 5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
 </style>
 </head>
 
@@ -152,15 +227,11 @@ footer {
 <nav class="top-menu">
 
     <a href="/" class="menu-item active">
-        Home
+        About
     </a>
 
     <a href="/cv/" class="menu-item">
         CV
-    </a>
-
-    <a href="/misc/" class="menu-item">
-        Misc
     </a>
 
 </nav>
@@ -174,16 +245,18 @@ footer {
     <h1>Jonathan Duch</h1>
 
     <div class="contact">
-        <a href="https://linkedin.com/in/jonathan-duch/" target="_blank">
+        <a href="https://www.linkedin.com/in/jonathan-duch/" target="_blank">
             linkedin.com/in/jonathan-duch/
         </a>
     </div>
 
 </header>
 
+<div class="rule"></div>
+
 <section>
 
-    <div class="section-label">About</div>
+    <div class="section-label">About Me</div>
 
     <p>
         I have spent most of my career working at the at the cross section of
@@ -200,44 +273,6 @@ footer {
     <p>
         Today I focus on AI, marketing technology, and systems that help
         organizations build lasting customer relationships.
-    </p>
-
-</section>
-
-<section>
-
-    <div class="section-label">Life and Work Philosophy</div>
-
-    <p>
-        Simple is better. 
-    </p>
-
-    <p>
-        It is how my brain works. I see complexity, and then I obsess over it to distill it to its simpliest terms. That is hard to do. It takes time. It is sometimes worth it.  Then again, it is how my mind works so I don't have much of a choice.
-    </p>
-
-</section>
-
-<div class="rule"></div>
-
-<section>
-
-    <div class="section-label">This Site</div>
-
-    <h2>Three pages.</h2>
-
-    <p>
-        <strong>Home</strong> - You are here.
-    </p>
-  
-    <p>
-        <strong>CV</strong> contains my professional experience,
-        accomplishments, and career history.
-    </p>
-
-    <p>
-        <strong>Misc</strong> contains projects, ideas,
-        writing, and other topics that don't neatly fit anywhere else.
     </p>
 
 </section>
